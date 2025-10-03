@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos | DG MAXX</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 60, 0, 0.2);
+        }
+        body {
+            background-color: #f8f5f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-green-900 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i data-feather="youtube" class="text-amber-400 mr-2"></i>
+                    <a href="index.html" class="text-xl font-bold">DG MAXX</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-amber-300">Home</a>
+                    <a href="videos.html" class="text-white hover:text-amber-300 font-semibold">Videos</a>    
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video Header -->
+    <div class="bg-green-800 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Wildlife Video Collection</h1>
+            <p class="text-xl">Dramatic countdowns of nature's most astonishing creatures</p>
+        </div>
+    </div>
+
+    <!-- Video Grid -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold text-green-900">All Episodes</h2>
+                <div class="flex space-x-4">
+                    <div class="relative">
+                        <select class="bg-white px-4 py-2 pr-8 rounded-lg shadow appearance-none focus:outline-none">
+                            <option>Sort by Latest</option>
+                            <option>Sort by Popular</option>
+                            <option>Sort by Views</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <i data-feather="chevron-down"></i>
+                        </div>
+                    </div>
+                    <button class="bg-white px-4 py-2 rounded-lg shadow">
+                        <i data-feather="filter" class="mr-2"></i> Filter
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Video 1 -->
+                <div class="video-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="camouflage.jpg" alt="Top 10 Deadliest Snakes" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-green-900">Camouflage Tricks Caught on Camera</h3>
+                        <p class="text-gray-600 mt-2">Discover the world’s most mind-blowing camouflaged animals!</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">260k Views</span>
+                            <a href="https://youtu.be/hXCLi3b1ydY?si=Pc3_sct6gBUACUI6" class="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                                <i data-feather="play" class="mr-2"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="bhorse.jpg" alt="Ocean's Hidden Monsters" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-green-900">16 Most Beautiful Horses on Earth</h3>
+                        <p class="text-gray-600 mt-2">Prepare to be amazed by the 16 most beautiful horses on the planet</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">100k Views</span>
+                            <a href="https://youtu.be/iPnYzv6qYmo?si=9WKIhg3H5jt4X0Q3" class="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                                <i data-feather="play" class="mr-2"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="lion.jpg" alt="Jungle's Elite Predators" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-green-900">Rarest Lions Ever Seen - Black Lion</h3>
+                        <p class="text-gray-600 mt-2">7 Rarest Lions Ever Seen – Including the Mysterious Black Lion</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">65k Views</span>
+                            <a href="https://youtu.be/9fHv8blTG4U?si=x5UmJImLJ3lMqHVg" class="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                                <i data-feather="play" class="mr-2"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="CROC.jpg" alt="Desert's Deadly Survivors" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-green-900">5 Animals That Can Defeat a Crocodile</h3>
+                        <p class="text-gray-600 mt-2">Crocodiles are some of the most powerful predators on the planet</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">40k Views</span>
+                            <a href="https://youtu.be/wNS4rbKk--M?si=gx4FlPjRfMeJLMmv" class="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                                <i data-feather="play" class="mr-2"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="video-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="HEN.jpg" alt="Arctic's Frozen Warriors" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-green-900">The Money Math of Kienyeji (native) Chicken</h3>
+                        <p class="text-gray-600 mt-2">Let us see the way we can make good money farming kienyeji chicken</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">23k Views</span>
+                            <a href="https://youtu.be/d_pED2OwT5g?si=i_QlGj7sIl-e_1_r" class="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                                <i data-feather="play" class="mr-2"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="video-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="MONSTER.jpg" alt="Rainforest's Camouflage Masters" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-green-900">Real Amazon Monsters That Will Haunt Your Dreams</h3>
+                        <p class="text-gray-600 mt-2">Beneath the lush canopy lies a world of giants, killers, and creatures so terrifying, they seem unreal.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">20k Views</span>
+                            <a href="https://youtu.be/mSPb62fgISE?si=3dZtFPO72iPgZSCI" class="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                                <i data-feather="play" class="mr-2"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 7 -->
+                <div class="video-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="dog.jpg" alt="Africa's Untamed Giants" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-green-900">HUGE Dogs That Think They Are Tiny Puppies</h3>
+                        <p class="text-gray-600 mt-2">Think you've seen big dogs? In this epic video, we reveal the World's Biggest Dog Breeds</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">9k Views</span>
+                            <a href="https://youtu.be/SXLkeOA6PEg?si=6z1t9htJv0S1-Uqw" class="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                                <i data-feather="play" class="mr-2"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 8 -->
+                <div class="video-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="elion.jpg" alt="Australia's Dangerous Wonders" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-green-900">Lions That Dominated The Ancient World</h3>
+                        <p class="text-gray-600 mt-2">They were prehistoric titans. From the bone-crushing Cave Lion to the massive American Lion</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-amber-600 font-bold">3K Views</span>
+                            <a href="https://youtu.be/6tPG3YRXM2Q?si=dSuecwX4czOmci-j" class="bg-green-800 hover:bg-green-900 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                                <i data-feather="play" class="mr-2"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-4 py-2 border border-green-300 rounded-md text-green-800 hover:bg-green-100">Previous</a>
+                    <a href="#" class="px-4 py-2 bg-green-800 text-white rounded-md hover:bg-green-900">1</a>                    
+                    <a href="#" class="px-4 py-2 border border-green-300 rounded-md text-green-800 hover:bg-green-100">Next</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">DG MAXX</h3>
+                    <p class="text-green-200">Exploring the wild side of nature through dramatic storytelling.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.youtube.com/@dgmaxxw?sub_confirmation=1" class="text-green-200 hover:text-white" target="_blank"><i data-feather="youtube"></i></a>
+                        <a href="https://www.instagram.com/wa.nyagah" class="text-green-200 hover:text-white"  target="_blank"><i data-feather="instagram"></i></a>
+                        <a href="https://x.com/Dennis_Dw" class="text-black-700 hover:text-white" target="_blank" rel="noopener noreferrer"><i data-feather="twitter"></i></a>                      
+                        <a href="https://www.facebook.com/profile.php?id=61561230757275" class="text-blue-600 hover:text-white" target="_blank" rel="noopener noreferrer"><i data-feather="facebook"></i></a>
+
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Episodes</h4>
+                    <ul class="space-y-2">
+                        <li><a href="videos.html" class="text-green-200 hover:text-white">Latest Videos</a></li>
+                        <li><a href="videos.html" class="text-green-200 hover:text-white">Most Popular</a></li>
+                        <li><a href="videos.html" class="text-green-200 hover:text-white">Top 10 Countdowns</a></li>
+                        <li><a href="videos.html" class="text-green-200 hover:text-white">Special Features</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-green-200 hover:text-white">About DG MAXX</a></li>
+                        <li><a href="#" class="text-green-200 hover:text-white">Behind the Scenes</a></li>
+                        <li><a href="#" class="text-green-200 hover:text-white">Wildlife Facts</a></li>
+                        <li><a href="#" class="text-green-200 hover:text-white">Merchandise</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i data-feather="mail" class="mr-2"></i> <a href="mailto:dennimaxx@gmail.com" class="text-green-200 hover:text-white">dennimaxx@gmail.com</a></li>
+                        <li class="flex items-center"><i data-feather="phone" class="mr-2"></i> <a href="mailto:dennimaxx@gmail.com" class="text-green-200 hover:text-white">Business Inquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-green-800 mt-8 pt-8 text-center text-green-200">
+                <p>&copy; 2025 DG MAXX Wildlife Adventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
